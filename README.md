@@ -60,7 +60,42 @@ Pulse runs on **your** analysis machine, **after** collection, **offline**.
 - **When:** in the analysis/reporting phase. It can be re-run any time, on a
   plane, with no network — and re-run after a fix to confirm the path is gone.
 
+## Installation
+
+Pulse is pure Python (**3.9+**) with **no third-party dependencies**.
+
+**Option A — install the CLI (recommended)**
+
+```bash
+pip install git+https://github.com/FortisFortuna-br/pulse-ad.git
+```
+
+This installs a `pulse` command:
+
+```bash
+pulse --version
+pulse analyze --onprem <sharphound> --cloud <azurehound>
+```
+
+If your shell can't find `pulse` afterwards, Python's scripts directory isn't on
+your PATH (common on Windows user installs). Add it, or just use the
+always-works form `python -m pulse ...`.
+
+**Option B — run from source (clone, no install)**
+
+```bash
+git clone https://github.com/FortisFortuna-br/pulse-ad.git
+cd pulse-ad
+python -m pulse --version
+```
+
+The source clone also ships the `samples/` used in the Quick start below.
+(A PyPI release — `pip install pulse-ad` — is planned.)
+
 ## Quick start
+
+> Examples use `python -m pulse` (works from a clone). If you installed via
+> pip, the `pulse` command works identically.
 
 ```bash
 python -m pulse analyze \
