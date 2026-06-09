@@ -2,6 +2,8 @@
 
 > **See how your on-prem compromise becomes a cloud compromise — in minutes, not months.**
 
+![Pulse traces the path from one on-prem foothold to Entra ID Global Administrator](docs/demo.svg)
+
 BloodHound maps on-prem Active Directory. AzureHound maps Entra ID. **Nobody
 welds the two together.** Pulse does exactly that: it takes recon you already
 collected and shows the shortest path by which an attacker who owns *one*

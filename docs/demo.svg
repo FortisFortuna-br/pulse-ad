@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 510" font-family="ui-monospace, 'Cascadia Code', 'SF Mono', Consolas, monospace" font-size="13">
+  <rect x="8" y="8" width="804" height="494" rx="10" fill="#0d1117" stroke="#30363d"/>
+  <circle cx="30" cy="27" r="6" fill="#ff5f56"/>
+  <circle cx="50" cy="27" r="6" fill="#ffbd2e"/>
+  <circle cx="70" cy="27" r="6" fill="#27c93f"/>
+  <text x="410" y="31" text-anchor="middle" fill="#7d8590">pulse — analyze</text>
+  <line x1="8" y1="44" x2="812" y2="44" stroke="#21262d"/>
+
+  <text x="22" y="74" xml:space="preserve" fill="#e6edf3"><tspan fill="#3fb950">$</tspan> pulse analyze --onprem bloodhound.zip --cloud azurehound.json --foothold ALICE</text>
+
+  <text x="22" y="116" xml:space="preserve" fill="#56b6c2">  ____        _</text>
+  <text x="22" y="137" xml:space="preserve" fill="#56b6c2"> |  _ \ _   _| |___  ___    Hybrid Identity Attack Path Engine</text>
+  <text x="22" y="158" xml:space="preserve" fill="#56b6c2"> | |_) | | | | / __|/ _ \   on-prem AD  --&gt;  Entra ID</text>
+  <text x="22" y="179" xml:space="preserve" fill="#56b6c2"> |  __/| |_| | \__ \  __/   v0.1.0</text>
+  <text x="22" y="200" xml:space="preserve" fill="#56b6c2"> |_|    \__,_|_|___/\___|</text>
+
+  <text x="22" y="242" xml:space="preserve" fill="#768390">Loaded 14 nodes, 17 edges.</text>
+
+  <text x="22" y="284" xml:space="preserve" fill="#c9d1d9">Hybrid bridges found (2):</text>
+  <text x="22" y="305" xml:space="preserve" fill="#e3b341">  [CRITICAL] Entra Connect sync host: AADCONNECT01.CORP.LOCAL</text>
+
+  <text x="22" y="347" xml:space="preserve" fill="#c9d1d9">Attack paths to cloud admin (1):</text>
+
+  <text x="22" y="389" xml:space="preserve" fill="#c9d1d9">  [3 hops] foothold: ALICE@CORP.LOCAL</text>
+  <text x="22" y="410" xml:space="preserve" fill="#8b949e">      ALICE@CORP.LOCAL  --AdminTo--&gt;  AADCONNECT01.CORP.LOCAL</text>
+  <text x="22" y="431" xml:space="preserve" fill="#ff7b72" font-weight="bold">      AADCONNECT01.CORP.LOCAL  ==[BRIDGE]==&gt;  bob@corp.com</text>
+  <text x="22" y="452" xml:space="preserve" fill="#8b949e">      bob@corp.com  --HasRole--&gt;  Global Administrator</text>
+  <text x="22" y="473" xml:space="preserve" fill="#ff7b72" font-weight="bold">      RESULT: Global Administrator  <tspan fill="#ffa657">*** TENANT COMPROMISE ***</tspan></text>
+</svg>
