@@ -1,0 +1,18 @@
+{
+  "_comment": "Synthetic Entra ID bundle (AzureHound-style fields). Tenant: Corp. Not real data.",
+  "tenant": {"id": "11111111-1111-1111-1111-111111111111", "displayName": "Corp"},
+  "users": [
+    {"id": "c0a8-alice", "userPrincipalName": "alice@corp.com",
+     "onPremisesSecurityIdentifier": "S-1-5-21-CORP-1105"},
+    {"id": "c0a8-bob", "userPrincipalName": "bob@corp.com",
+     "onPremisesSecurityIdentifier": "S-1-5-21-CORP-1106"},
+    {"id": "c0a8-breakglass", "userPrincipalName": "breakglass@corp.com",
+     "onPremisesSecurityIdentifier": null}
+  ],
+  "roles": [
+    {"id": "role-ga", "displayName": "Global Administrator",
+     "members": ["c0a8-bob", "c0a8-breakglass"]},
+    {"id": "role-reader", "displayName": "Global Reader",
+     "members": ["c0a8-alice"]}
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "meta": {"type": "azurehound", "count": 9, "version": 2},
+  "data": [
+    {"kind": "AZTenant", "data": {"id": "11111111-1111-1111-1111-111111111111", "displayName": "Corp"}},
+    {"kind": "AZUser", "data": {"id": "c0a8-bob", "userPrincipalName": "bob@corp.com",
+      "onPremisesSecurityIdentifier": "S-1-5-21-CORP-1106", "accountEnabled": true}},
+    {"kind": "AZUser", "data": {"id": "c0a8-alice", "userPrincipalName": "alice@corp.com",
+      "onPremisesSecurityIdentifier": "S-1-5-21-CORP-1105", "accountEnabled": true}},
+    {"kind": "AZUser", "data": {"id": "c0a8-breakglass", "userPrincipalName": "breakglass@corp.com",
+      "onPremisesSecurityIdentifier": null, "accountEnabled": true}},
+    {"kind": "AZRole", "data": {"id": "role-ga", "displayName": "Global Administrator",
+      "templateId": "62e90394-69f5-4237-9190-012177145e10"}},
+    {"kind": "AZRole", "data": {"id": "role-reader", "displayName": "Global Reader",
+      "templateId": "f2ef992c-3afb-46b9-b7cf-a126ee74c451"}},
+    {"kind": "AZRoleAssignment", "data": {"principalId": "c0a8-bob",
+      "roleDefinitionId": "62e90394-69f5-4237-9190-012177145e10", "directoryScopeId": "/"}},
+    {"kind": "AZRoleAssignment", "data": {"principalId": "c0a8-breakglass",
+      "roleDefinitionId": "62e90394-69f5-4237-9190-012177145e10", "directoryScopeId": "/"}},
+    {"kind": "AZRoleAssignment", "data": {"principalId": "c0a8-alice",
+      "roleDefinitionId": "f2ef992c-3afb-46b9-b7cf-a126ee74c451", "directoryScopeId": "/"}}
+  ]
+}

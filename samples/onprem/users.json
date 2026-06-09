@@ -1,0 +1,25 @@
+{
+  "data": [
+    {
+      "ObjectIdentifier": "S-1-5-21-CORP-1105",
+      "Properties": {"name": "ALICE@CORP.LOCAL", "objectid": "S-1-5-21-CORP-1105", "domainsid": "S-1-5-21-CORP", "enabled": true},
+      "Aces": []
+    },
+    {
+      "ObjectIdentifier": "S-1-5-21-CORP-1106",
+      "Properties": {"name": "BOB@CORP.LOCAL", "objectid": "S-1-5-21-CORP-1106", "domainsid": "S-1-5-21-CORP", "enabled": true},
+      "Aces": []
+    },
+    {
+      "ObjectIdentifier": "S-1-5-21-CORP-1107",
+      "Properties": {"name": "HELPDESK01@CORP.LOCAL", "objectid": "S-1-5-21-CORP-1107", "domainsid": "S-1-5-21-CORP", "enabled": true},
+      "Aces": []
+    },
+    {
+      "ObjectIdentifier": "S-1-5-21-CORP-1150",
+      "Properties": {"name": "MSOL_A1B2C3D4E5F6@CORP.LOCAL", "objectid": "S-1-5-21-CORP-1150", "domainsid": "S-1-5-21-CORP", "enabled": true},
+      "Aces": []
+    }
+  ],
+  "meta": {"type": "users", "count": 4, "version": 6}
+}

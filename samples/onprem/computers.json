@@ -1,0 +1,22 @@
+{
+  "data": [
+    {
+      "ObjectIdentifier": "S-1-5-21-CORP-1201",
+      "Properties": {"name": "AADCONNECT01.CORP.LOCAL", "objectid": "S-1-5-21-CORP-1201", "domainsid": "S-1-5-21-CORP"},
+      "LocalAdmins": {"Collected": true, "FailureReason": null,
+        "Results": [{"ObjectIdentifier": "S-1-5-21-CORP-1105", "ObjectType": "User"}]},
+      "Sessions": {"Collected": true, "FailureReason": null,
+        "Results": [{"UserSID": "S-1-5-21-CORP-1150", "ComputerSID": "S-1-5-21-CORP-1201"}]},
+      "Aces": []
+    },
+    {
+      "ObjectIdentifier": "S-1-5-21-CORP-1202",
+      "Properties": {"name": "WKS-FINANCE.CORP.LOCAL", "objectid": "S-1-5-21-CORP-1202", "domainsid": "S-1-5-21-CORP"},
+      "LocalAdmins": {"Collected": true, "FailureReason": null,
+        "Results": [{"ObjectIdentifier": "S-1-5-21-CORP-1107", "ObjectType": "User"}]},
+      "Sessions": {"Collected": true, "FailureReason": null, "Results": []},
+      "Aces": []
+    }
+  ],
+  "meta": {"type": "computers", "count": 2, "version": 6}
+}
